@@ -65,20 +65,12 @@ cd appointment-booking-app
 
 ### 2️⃣ Setup backend
 
-cd backend
+cd fsd-clinic-backend
 npm install
-Create a `.env` file:
-PORT=5000
-MONGO_URI=your_mongodb_connection_string
-JWT_SECRET=your_secret_key
-EMAIL_USER=your_email@example.com
-
-
-Run backend:
 npm start
 
 ### 3️⃣ Setup frontend
-cd frontend
+cd fsd-clinic-frontend
 npm install
 npm start
 

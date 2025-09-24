@@ -21,35 +21,78 @@ Built with **MERN stack (MongoDB, Express, React, Node.js)**, this project provi
 
 ```
 appointment-booking-app/
-├── backend/
+├── sad-clinic-backend/
+│   ├── config/
+│   │   └── db.js
 │   ├── controllers/
-│   │   └── appointmentController.js   # Appointment logic
+│   │   ├── appointmentController.js
+│   │   ├── authController.js
+│   │   └── doctorController.js
+│   ├── middleware/
+│   │   ├── authMiddleware.js
+│   │   ├── errorMiddleware.js
+│   │   └── uploadMiddleware.js
 │   ├── models/
-│   │   ├── Appointment.js             # Appointment schema/model
-│   │   └── User.js                    # User/Doctor schema/model
+│   │   ├── Appointment.js
+│   │   ├── Doctor.js
+│   │   └── User.js
 │   ├── routes/
-│   │   └── appointmentRoutes.js       # Appointment API routes
+│   │   ├── adminRoutes.js
+│   │   ├── appointmentRoutes.js
+│   │   ├── authRoutes.js
+│   │   └── doctorRoutes.js
+│   ├── uploads/
+│   │   ├── 1736855079711.jpg
+│   │   ├── 1736855080709.jpg
+│   │   ├── 1736855081729.jpg
+│   │   └── 1736855083747.jpg
 │   ├── utils/
-│   │   └── sendEmail.js               # Email notifications
-│   ├── server.js                      # Express server entry
-│   └── config/
-│       └── database.js                # MongoDB connection
+│   │   └── generateToken.js
+│   ├── .env
+│   ├── package-lock.json
+│   ├── package.json
+│   └── server.js
 │
-├── frontend/
+├── sad-clinic-frontend/
+│   ├── node_modules/
+│   ├── public/
+│   │   ├── favicon.ico
+│   │   ├── index.html
+│   │   ├── logo192.png
+│   │   ├── logo512.png
+│   │   ├── manifest.json
+│   │   └── robots.txt
 │   ├── src/
-│   │   ├── pages/
-│   │   │   ├── PatientDashboard.js     # Patient UI
-│   │   │   └── AdminDashboard.js       # Admin UI
+│   │   ├── components/
+│   │   │   ├── Footer.js
+│   │   │   └── Navbar.js
 │   │   ├── context/
-│   │   │   ├── AuthContext.js          # Authentication state
-│   │   │   └── SocketContext.js        # Socket.IO client
+│   │   │   ├── AuthContext.js
+│   │   │   └── SocketContext.js
+│   │   ├── pages/
+│   │   │   ├── AdminDashboard.js
+│   │   │   ├── BookAppointment.js
+│   │   │   ├── DoctorDashboard.js
+│   │   │   ├── ForgotPassword.js
+│   │   │   ├── Home.js
+│   │   │   ├── Login.js
+│   │   │   ├── PatientDashboard.js
+│   │   │   ├── Register.js
+│   │   │   └── ResetPassword.js
 │   │   ├── utils/
-│   │   │   └── api.js                  # Axios config
-│   │   └── App.js                      # Routes & entry point
+│   │   │   └── api.js
+│   │   ├── App.css
+│   │   ├── App.js
+│   │   ├── index.css
+│   │   └── index.js
+│   ├── .gitignore
+│   ├── package-lock.json
 │   └── package.json
 │
-├── .env                                # Environment variables
-└── README.md
+├── README.md
+├── tailwind.config.js
+└── package-lock.json
+
 ```
 
 ---
